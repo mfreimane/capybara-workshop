@@ -1,8 +1,11 @@
 When(/^I am on Appimation home page/) do
   visit('/')
-  find(:css, '#start_button')
-  find(:xpath, "//button[@id = 'start_button']")
-  find(:css, "#video")
-  find(:css, ".feature-image")
-  find(:xpath, "//h3[contains(text(), 'Team up')]/preceding-sibling::img")
+  print obj (find(:css, '#signup').visible?
+  find(:css, '#start_button').click
+  unless find(:css, '#signup').visible?
+  raise "element not visible"
+end
+
+  
+  find(:css, '#signup .closecross').click
 end
