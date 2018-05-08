@@ -54,6 +54,6 @@ class HomePage < BasePage
   end
 
   def load
-    visit('/')
+    visit('/legacy')
   end
 end
