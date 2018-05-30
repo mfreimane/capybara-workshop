@@ -8,4 +8,9 @@ class Tests
     @login_tests
   end
 
+  def signup_tests
+    @signup_tests ||= SignupTest.new(@pages)
+    @signup_tests
+  end
+
 end
